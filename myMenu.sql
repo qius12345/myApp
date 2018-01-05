@@ -1,0 +1,11 @@
+SET NAMES UTF8;
+DROP DATABASE IF EXISTS myMenu;
+CREATE DATABASE myMenu CHARSER=UTF8;
+USE myMenu;
+CREATE TABLE index_carousel(
+  cid INT PRIMARY KEY AUTO_INCREMENT,
+  img VARCHAR(128),
+  title VARCHAR(128),
+  href VARCHAR(128)
+);
+INSERT INTO index_carousel VALUES(null,'1.jpg','早餐','');
